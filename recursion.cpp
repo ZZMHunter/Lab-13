@@ -27,7 +27,10 @@ void printRange(int left, int right){
 }
 //B 
 int sumRange(int left, int right){
-    if (left < right){
+    if (left > right){
+        return;
+    }
+    if (left == right){
         return right;
     }else{
         return left + sumRange(left+1, right);
