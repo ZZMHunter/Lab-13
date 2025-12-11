@@ -18,7 +18,7 @@
 
 //A
 void printRange(int left, int right){
-    if (left >= right){
+    if (left > right){
         return;
     }else{
         std::cout << left << " ";
